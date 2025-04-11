@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ms-payment
+
+  datasource:
+    url: jdbc:postgresql://localhost:8877/payment_db
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+server:
+  port: 8082
